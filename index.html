@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+
+<body>
+
+	<!--<a target="_blank" href="mailto:YourName@YourSite.com?cc=someone@YourSite.com&amp;amp;amp;amp;amp;bcc=someoneElse@YourSite.com&amp;amp;amp;amp;amp;subject=Shipping%20Information%20Request&amp;amp;amp;amp;amp;body=Please%20tell%20me%20if%20my%20order%20has%20shipped!&amp;amp;amp;amp;amp;ni_email_cfg_file=email/email.config.json">Example link </a>-->
+
+
+	<script>
+		var filetosend = "email/email.config.json";
+		window.open(filetosend);
+		document.writeln('<a href="mailto:?subject=Pictures from PhotoAlbum&cc= &body=This is the body text&attachment=' + filetosend + '">Email Me</a><br>');
+	</script>
+</body>
+
+</html>
