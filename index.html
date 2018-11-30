@@ -1,21 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+<HTML>
 
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
+<HEAD>
+	<TITLE>Test Email</TITLE>
+	<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+		function sendMail() {
+			//var filetosend = "http://192.168.1.82/Timesheet/email.txt";
+			// Construct a mailto: URL with all the details:
+			//window.open(filetosend);
+			var recipient = "jaffar1310@gmail.com";
+			//var recipient2 = "rsisneros@speakeasy.net";
+			var combine = ";"
+			var comrecip = recipient + combine
+			var subject = "Test Email Attachments"
+			var msg = "Test Email Attachments File"
+			var attach = "download.csv"
 
-<body>
+			document.location = "mailto:" + comrecip + "?subject=" + subject + "&body=" + msg + "&attachment=" + attach
 
-	<!--<a target="_blank" href="mailto:YourName@YourSite.com?cc=someone@YourSite.com&amp;amp;amp;amp;amp;bcc=someoneElse@YourSite.com&amp;amp;amp;amp;amp;subject=Shipping%20Information%20Request&amp;amp;amp;amp;amp;body=Please%20tell%20me%20if%20my%20order%20has%20shipped!&amp;amp;amp;amp;amp;ni_email_cfg_file=email/email.config.json">Example link </a>-->
+		}
 
+	</SCRIPT>
+</HEAD>
 
-	<script>
-		var filetosend = "email/email.config.json";
-		window.open(filetosend);
-		document.writeln('<a href="mailto:?subject=Pictures from PhotoAlbum&cc= &body=This is the body text&attachment=' + filetosend + '">Email Me</a><br>');
-	</script>
-</body>
+<BODY>
+	<!-- <FORM NAME="Form2" ACTION='""'>
+       <INPUT TYPE="submit" VALUE="Send mail" onCLICK="sendMail()"> </FORM> -->
+	<A HREF="javascript:sendMail()">Send Mail to Bank of West and Mimi</A>
+</BODY>
 
-</html>
+</HTML>
