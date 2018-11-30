@@ -7,13 +7,15 @@
 			//var filetosend = "http://192.168.1.82/Timesheet/email.txt";
 			// Construct a mailto: URL with all the details:
 			//window.open(filetosend);
-			var recipient = "jaffar1310@gmail.com";
+
+			var filetosend = "email/download.csv"
+			var recipient = "jaffar1310@gmail.com"
 			//var recipient2 = "rsisneros@speakeasy.net";
 			var combine = ";"
-			var comrecip = recipient + combine
+			var comrecip = recipient
 			var subject = "Test Email Attachments"
 			var msg = "Test Email Attachments File"
-			var attach = "download.csv"
+			var attach = filetosend
 
 			document.location = "mailto:" + comrecip + "?subject=" + subject + "&body=" + msg + "&attachment=" + attach
 
